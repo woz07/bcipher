@@ -108,4 +108,19 @@ public class Main {
 > Note: As we kept the `keys` the same we got the same result, but if we changed the `keys` then that would
 > cause an issue as we won't get the correct decryption
 
-TODO: continue
+You can easily set the keys by using the method `setKeys(byte[] keys)` this method will set the keys for you.
+
+```java
+import dev.woz07.bcipher.Cipher;
+import dev.woz07.bcipher.exceptions.CipherKeyException;
+import dev.woz07.bcipher.exceptions.CipherNullException;
+import dev.woz07.bcipher.exceptions.CipherSizeException;
+
+public class Main {
+    public static void main(String[] args) throws CipherSizeException, CipherNullException, CipherKeyException {
+        Cipher cipher = new Cipher();
+        cipher.setKeys(new byte[]{0xD, 0xC, 0xB, 0xA});
+    }
+}
+```
+Here we have updated keys from null to the byte array provided in the `setKeys()` method.
