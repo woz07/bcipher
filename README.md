@@ -1,6 +1,7 @@
 # Bcipher
 
-> bcipher uses java 11#
+> bcipher uses java 11
+
  
 > bcipher is also NOT 100% secure, so please do not use this for applications that require high level of security
 > as this can be broken, it is just meant to be a simple basic encryptor/ decryptor with not high security.
