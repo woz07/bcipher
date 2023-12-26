@@ -11,7 +11,7 @@ Bcipher is a cipher library for Java applications, you can use it encrypt and de
 It utilizies a XOR based system to encrypt and decrypt your data, this is done through a key. The key is an 
 array of `bytes` where each element of the key is what encrypts your data, so your data is encrypted multiple times.
 
-> T`he length of the byte array must be less than or equal to 256 while also being greater than 0.
+> The length of the byte array must be less than or equal to 256 while also being greater than 0.
 > Each element within the array must also be greater than or equal to 0, no negatives allowed.
 
 ## How to use it
