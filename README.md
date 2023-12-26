@@ -124,3 +124,20 @@ public class Main {
 }
 ```
 Here we have updated keys from null to the byte array provided in the `setKeys()` method.
+
+You can also use the `flush()` method to set keys to null if you do not want to use them anymore.
+You aren't able to set `keys` to null via `setKeys()` hence why the `flush()` method exists
+```java
+import dev.woz07.bcipher.Cipher;
+import dev.woz07.bcipher.exceptions.CipherKeyException;
+import dev.woz07.bcipher.exceptions.CipherNullException;
+import dev.woz07.bcipher.exceptions.CipherSizeException;
+
+public class Main {
+    public static void main(String[] args) throws CipherSizeException, CipherNullException, CipherKeyException {
+        Cipher cipher = new Cipher();
+        cipher.setKeys(new byte[]{0xD, 0xC, 0xB, 0xA});
+        cipher.flush();
+    }
+}
+```
