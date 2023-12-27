@@ -21,7 +21,7 @@ array of `bytes` where each element of the key is what encrypts your data, so yo
 3. In your `pom.xml` add the dependency:
    ```xml
         <dependency>
-            <groupId>dev.woz07.lwlfj</groupId>
+            <groupId>dev.woz07.bcipher</groupId>
             <artifactId>bcipher</artifactId>
             <version>1.0</version>
         </dependency>
